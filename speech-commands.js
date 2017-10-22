@@ -3,7 +3,7 @@ var SpeechGrammarList = SpeechGrammarList || webkitSpeechGrammarList
 var SpeechRecognitionEvent = SpeechRecognitionEvent || webkitSpeechRecognitionEvent
 
 // define basic list of possible spoken commands
-var commands = [ 'sit' , 'stop' , 'stay', 'speak', 'sit down', 'yes', 'no', 'go away', "don't do that"];
+var commands = [ 'sit' , 'stop' , 'stay', 'speak', 'sit down', 'yes', 'no', 'go away', "don't do that", 'run', 'jump', 'shake', 'come', 'come here'];
 var grammar = '#JSGF V1.0; grammar commands; public <commands> = ' + commands.join(' | ') + ' ;'
 
 var recognition = new SpeechRecognition();
@@ -16,10 +16,10 @@ recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
 // start the recognition when the user clicks the speak button
-document.getElementById("speak").onclick = function() {
+$("speak").click( function() {
   recognition.start();
   console.log('Ready to receive a command.');
-}
+});
 
 recognition.onresult = function(event) {
   var last = event.results.length - 1;
