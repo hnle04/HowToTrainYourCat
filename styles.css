@@ -2,7 +2,6 @@ body{
     background-color: #F0F8FF;
 
   }
-<<<<<<< HEAD
  #tuna {
   background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
   height: 200px; width: 400px;
@@ -30,10 +29,9 @@ animation: name duration timing-function delay iteration-count direction fill-mo
   0% { background-position: -400px 0; } 
   100% {background-position: -400px -1000px; } 
 }
-=======
 
 .buttonA{
-    background-color: #3498DB;
+    background-color: lightpink;
     border: none;
     color: black;
     padding: 30px;
@@ -47,7 +45,6 @@ animation: name duration timing-function delay iteration-count direction fill-mo
    /* transition-duration: 0.4s;*/
 }
 
->>>>>>> 4dbe958e72cc5c2c219e206abc3e52e9790eb798
 .button {
     background-color: lightblue;
     border: none;
