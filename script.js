@@ -177,6 +177,9 @@ recognition.onresult = function (event) {
   console.log('Result received: ' + command + '.');
   console.log('Confidence: ' + event.results[0][0].confidence);
 
+  // output for users to see
+  $('#input').text("You told the cat to " + command);
+
   // make the cat do some stuff
   if (command === 'sit' || command === 'stay' || command === 'stop' || command === 'sit down') {
     // cat MAY sit
