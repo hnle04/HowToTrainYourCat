@@ -229,3 +229,13 @@ div
 {
     margin-top: 10%;
 }
+
+.close
+{
+    margin-bottom: 10px;
+}
+
+.modal-content
+{
+    font-family: 'Yrsa', serif;
+}
