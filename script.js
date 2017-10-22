@@ -1,4 +1,4 @@
-$("#info").click(function() {
+$("info").click(function() {
 })
 
 $("button.buttonA.button-settings").click(function() {
