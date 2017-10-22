@@ -1,0 +1,241 @@
+body{ 
+    background-color: #F0F8FF;
+
+  }
+
+#tuna
+{
+    height: 200px;
+    width: 400px;
+    padding: 100px;
+    margin: 100px auto 0;
+}
+
+ .tuna-walk-sit {
+  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+  height: 200px; width: 400px;
+  /*position: absolute;*/
+  bottom: 3em;
+  margin: 100px auto 0;
+  left: 50%;
+  transition: margin-left 4s linear;
+  animation: 
+    walk-cycle 1s steps(12) 4, 
+    sit-down .5s steps(5) 4s 1;
+  animation-fill-mode: forwards;
+}
+
+.tuna-sit {
+  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+  height: 200px; width: 400px;
+  /*position: absolute;*/
+  bottom: 3em;
+  margin: 100px auto 0;
+  left: 50%;
+  animation: 
+    sit-down .5s steps(5) 2s 1;
+  animation-fill-mode: forwards;
+}
+
+/* Above I'm using duration to kick off a second animation after the first starts. See this key:
+
+animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+@keyframes walk-cycle {  
+  0% { background-position: 0 0; } 
+  100% {background-position: 0 -2391px; } 
+}
+
+@keyframes sit-down {  
+  0% { background-position: -400px 0; } 
+  100% {background-position: -400px -1000px; } 
+}
+
+.tuna-running {
+  animation: 
+    walk-cycle 1s steps(12) 2,
+    walk-to-run .75s steps(12) 2s 1, 
+    run-cycle .75s steps(13) 2.75s infinite;
+  background: url(http://stash.rachelnabors.com/24ways2012/cat_sprite.png) 0 0 no-repeat; 
+  height: 200px;
+  width: 400px;
+  /*position: absolute;*/
+  bottom: 1px;
+  left: 50%;
+  /*margin-left: -200px;*/
+  translate3d(0,0,0);
+}
+
+@keyframes walk-cycle {  
+  0% {background-position: 0 0; } 
+  100% {background-position: 0 -2391px; } 
+}
+
+@keyframes walk-to-run {  
+  0% {background-position: -400px 0; } 
+  100% {background-position: -400px -2391px; } 
+}
+
+@keyframes run-cycle {  
+  0% {background-position: -800px 0; }
+  100% {background-position: -800px -2591px; } 
+}
+
+.tuna-walk {
+  /* steps causes the animation to chunk into 12 equal pieces */
+  animation: walk-cycle 1s steps(12) infinite;
+  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+  height: 200px;
+  width: 400px;
+  /*margin: 100px auto 0;*/
+}
+
+@keyframes walk-cycle {  
+  0% {background-position: 0 0; } 
+  100% {background-position: 0 -2391px; } /* Must be full height of sprite or skipping will happen.*/
+}
+
+h1 
+{
+    font-family: 'Gochi Hand', cursive;
+    font-size: 60px;
+}
+
+button 
+{
+    font-family: 'Yrsa', serif;
+}
+
+.buttonA{
+    background-color: lightpink;
+    border: none;
+    color: black;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 1px 20px;
+    width: auto;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.buttonB{
+    background-color: lightpink;
+    border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 auto;
+    width: auto;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+
+.button {
+    background-color: lightblue;
+    border: none;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 35px;
+    margin: 10px;
+    width: 20%;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.button1:hover { 
+    background-color: lightsalmon;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 12px;
+}
+.button2:hover {
+    background-color: lightpink;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 12px;
+}
+.button3:hover {
+    background-color: lightgreen;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 12px;
+}
+.button4:hover {
+    background-color: lightgoldenrodyellow;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    border-radius: 12px;
+}
+
+/* The Modal (background) */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    overflow-y: auto; 
+}
+
+audio 
+{
+    display: none;
+}
+
+i.material-icons
+{
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+div
+{
+    text-align: center;
+    vertical-align: middle;
+    margin: 15px 0;
+}
+
+#command-controls
+{
+    margin-top: 10%;
+}
+
+.close
+{
+    margin-bottom: 10px;
+}
+
+.modal-content
+{
+    font-family: 'Yrsa', serif;
+}

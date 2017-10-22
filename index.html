@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<!-- hello -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <title>How To Train Your Cat</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Yrsa" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+  <!-- bootstrap and jquery -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+    <h1>
+      <center>How To Train Your Cat</center>
+    </h1>
+  
+  <div id="tuna" class="tuna-walk-sit"></div>
+  
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <p>
+      <span class="close"><i class="material-icons">clear</i></span>
+      </p>
+      <br/>
+      <p>
+        Disclaimer: We don't actually know how to train cats,
+        and we aren't really trying to teach you how to train
+        cats with this app. BUT if you have successfully trained 
+        your cat, let us know!
+      </p>
+      <br/>
+      <p>
+        But on a more serious note, you should consider adopting
+        cats and other rescue animals from shelters. All they want
+        is to get out of that shelter and find a loving home. Best Friends
+        is an organization dedicated to helping keep rescues out of shelters
+        and you can learn more about what they do and how you can help 
+        <a href="https://bestfriends.org/">here</a>.
+      </p>
+    </div>
+
+  </div>
+
+
+  
+
+  <script src="speech-commands.js"></script>
+
+<div id="command-controls">
+  <button id="sit" class="button button1">
+    Sit
+  </button>
+  <button id="meow" class="button button2">
+    Meow
+  </button>
+  <button id="run" class="button button3">
+    Run
+  </button>
+  <button id="walk" class="button button4">
+    Walk
+  </button>
+</div>
+
+<div id="speak-button">
+<button id="speak" class="buttonB button-speak">
+       <i class="material-icons">mic</i> Say a command
+    </button>
+</div>
+
+  
+<div id="info-button">
+  <button class="buttonA button-info" id="info" alt-text="More info">
+    <i class="material-icons">info</i> Learn how to actually train your cat
+  </button>
+</div>
+<audio class="audios" id="meow-sound" controls preload="none">
+    <source src="meow.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
