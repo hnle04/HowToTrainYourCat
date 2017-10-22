@@ -15,11 +15,13 @@ function changeCatState(newCS)
   }
 
   setTimeout(function () {
+    // don't do anything if staying the same state
       if (currCatState === newCatState)
       {
         return;
       }
 
+      // remove current class and add new class
       if (currCatState === 0)
       {
         $('#tuna').removeClass('tuna-walk-sit');
@@ -45,6 +47,13 @@ function changeCatState(newCS)
       {
         $('#tuna').addClass('tuna-walk');
       }
+
+      // randomly play meowing sounds
+      if (Math.floor(Math.random()*101) < 30)
+      {
+        $('#meow-sound').trigger('play');
+      }
+
       currCatState = newCatState;
       return;
   }, 500);
@@ -84,6 +93,7 @@ $("#meow").click(function() {
   {
     console.log("speak");
     //play audio
+    $('#meow-sound').trigger('play');
     changeCatState(-1);
   }
 })
