@@ -2,6 +2,22 @@ body{
     background-color: #F0F8FF;
 
   }
+
+.buttonA{
+    background-color: lightpink;
+    border: none;
+    color: black;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 335px 20px 150px 85px;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 12px;
+   /* transition-duration: 0.4s;*/
+}
+
 .button {
     background-color: lightblue;
     border: none;
