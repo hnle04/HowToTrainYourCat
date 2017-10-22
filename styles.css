@@ -2,17 +2,38 @@ body{
     background-color: #F0F8FF;
 
   }
+
+#tuna
+{
+    height: 200px;
+    width: 400px;
+    padding: 100px;
+    margin: 100px auto 0;
+}
+
  .tuna-walk-sit {
   background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
   height: 200px; width: 400px;
-  position: absolute;
+  /*position: absolute;*/
   bottom: 3em;
-  margin: 500px -200px;
+  margin: 100px auto 0;
   left: 50%;
   transition: margin-left 4s linear;
   animation: 
     walk-cycle 1s steps(12) 4, 
     sit-down .5s steps(5) 4s 1;
+  animation-fill-mode: forwards;
+}
+
+.tuna-sit {
+  background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
+  height: 200px; width: 400px;
+  /*position: absolute;*/
+  bottom: 3em;
+  margin: 100px auto 0;
+  left: 50%;
+  animation: 
+    sit-down .5s steps(5) 2s 1;
   animation-fill-mode: forwards;
 }
 
@@ -38,10 +59,10 @@ animation: name duration timing-function delay iteration-count direction fill-mo
   background: url(http://stash.rachelnabors.com/24ways2012/cat_sprite.png) 0 0 no-repeat; 
   height: 200px;
   width: 400px;
-  position: absolute;
+  /*position: absolute;*/
   bottom: 1px;
   left: 50%;
-  margin-left: -200px;
+  /*margin-left: -200px;*/
   translate3d(0,0,0);
 }
 
@@ -66,12 +87,23 @@ animation: name duration timing-function delay iteration-count direction fill-mo
   background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat; 
   height: 200px;
   width: 400px;
-  margin: 100px auto 0;
+  /*margin: 100px auto 0;*/
 }
 
 @keyframes walk-cycle {  
   0% {background-position: 0 0; } 
   100% {background-position: 0 -2391px; } /* Must be full height of sprite or skipping will happen.*/
+}
+
+h1 
+{
+    font-family: 'Gochi Hand', cursive;
+    font-size: 60px;
+}
+
+button 
+{
+    font-family: 'Yrsa', serif;
 }
 
 .buttonA{
@@ -83,7 +115,7 @@ animation: name duration timing-function delay iteration-count direction fill-mo
     text-decoration: none;
     font-size: 16px;
     margin: 1px 20px;
-    width: 90px;
+    width: auto;
     cursor: pointer;
     border-radius: 12px;
     float: right;
@@ -96,7 +128,7 @@ animation: name duration timing-function delay iteration-count direction fill-mo
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    margin: 680px 20px 150px 8px;
+    /*margin: 680px 20px 150px 8px;*/
     width: 150px;
     cursor: pointer;
     border-radius: 12px;
@@ -108,15 +140,14 @@ animation: name duration timing-function delay iteration-count direction fill-mo
     background-color: lightblue;
     border: none;
     color: black;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     font-size: 35px;
-    margin: 670px 100px 300px 100px;
-    width: 200px;
+    margin: 10px;
+    width: 20%;
     cursor: pointer;
     border-radius: 12px;
-   /* transition-duration: 0.4s;*/
 }
 
 .button1:hover { 
@@ -177,4 +208,22 @@ animation: name duration timing-function delay iteration-count direction fill-mo
     text-decoration: none;
     cursor: pointer;
     overflow-y: auto; 
+}
+
+audio 
+{
+    display: none;
+}
+
+i.material-icons
+{
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+#command-controls
+{
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 10%;
 }

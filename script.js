@@ -22,9 +22,22 @@ function changeCatState(newCS)
       }
 
       // remove current class and add new class
+      if (newCatState === 0)
+      {
+        $('#tuna').addClass('tuna-sit');
+      }
+      else if (newCatState === 1)
+      {
+        $('#tuna').addClass('tuna-running');
+      }
+      else if (newCatState === 2)
+      {
+        $('#tuna').addClass('tuna-walk');
+      }
       if (currCatState === 0)
       {
         $('#tuna').removeClass('tuna-walk-sit');
+        $('#tuna').removeClass('tuna-sit');
       }
       else if (currCatState === 1)
       {
@@ -35,18 +48,7 @@ function changeCatState(newCS)
         $('#tuna').removeClass('tuna-walk');
       }
 
-      if (newCatState === 0)
-      {
-        $('#tuna').addClass('tuna-walk-sit');
-      }
-      else if (newCatState === 1)
-      {
-        $('#tuna').addClass('tuna-running');
-      }
-      else if (newCatState === 2)
-      {
-        $('#tuna').addClass('tuna-walk');
-      }
+      
 
       // randomly play meowing sounds
       if (Math.floor(Math.random()*101) < 30)

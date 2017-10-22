@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <!-- hello -->
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -8,11 +9,14 @@
 
   <title>How To Train Your Cat</title>
 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Yrsa" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-  
+
   <!-- bootstrap and jquery -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
@@ -21,35 +25,32 @@
 </head>
 
 <body>
-  <link type="text/css" rel="stylesheet" href="styles.css"/>
-  <h1><center>How To Train Your Cat</center></h1>
-  <div id="tuna" class="tuna-walk-sit"></div>
+  <link type="text/css" rel="stylesheet" href="styles.css" />
+    <h1>
+      <center>How To Train Your Cat</center>
+    </h1>
   <!-- Trigger/Open The Modal -->
-<button class="buttonA button-info" id="info">Info</button>
+  
+  <div id="tuna" class="tuna-walk-sit"></div>
+  
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
+    </div>
+
   </div>
-
-</div>
 
 
   
-    <button id="settings" class="buttonA button-settings">
-        Settings
-    </button>
-
-    <button id="speak" class="buttonB button-speak">
-        Speak
-    </button>
 
   <script src="speech-commands.js"></script>
 
+<div id="command-controls">
   <button id="sit" class="button button1">
     Sit
   </button>
@@ -62,12 +63,20 @@
   <button id="stop" class="button button4">
     Stop
   </button>
+</div>
+<button id="speak" class="buttonB button-speak">
+        Speak
+    </button>
 
-<audio class="audios" id="meow-sound" controls preload="none"> 
-   <source src="meow.mp3" type="audio/mpeg">
-</audio>
+  <audio class="audios" id="meow-sound" controls preload="none">
+    <source src="meow.mp3" type="audio/mpeg">
+  </audio>
 
-<script src="script.js"></script>
+  <button class="buttonA button-info" id="info" alt-text="More info">
+    <i class="material-icons">info</i> Learn how to actually train your cat
+  </button>
+
+  <script src="script.js"></script>
 
 </body>
 
