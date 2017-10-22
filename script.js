@@ -1,12 +1,14 @@
-$("button.buttonA.button-info").click(function() {
+$("#info").click(function() {
   // display information about the app and helping rescue animals
+  console.log("I wanna see some info!");
 });
 
-$("button.buttonA.button-settings").click(function() {
+$("#settings").click(function() {
   // display settings modal
+  console.log("choices~");
 })
 
-$("button.button.button1").click(function() {
+$("#sit").click(function() {
   // cat MAY sit
   let prob = Math.floor(Math.random() * 101);
   console.log("Probablity = " + prob);
@@ -17,7 +19,7 @@ $("button.button.button1").click(function() {
   }
 })
 
-$("button.button.button2").click(function() {
+$("#meow").click(function() {
   // cat MAY speak
   let prob = Math.floor(Math.random() * 101);
   console.log("Probablity = " + prob);
@@ -28,7 +30,7 @@ $("button.button.button2").click(function() {
   }
 })
 
-$("button.button.button3").click(function() {
+$("#stay").click(function() {
   // cat MAY stay
   let prob = Math.floor(Math.random() * 101);
   console.log("Probablity = " + prob);
@@ -39,7 +41,7 @@ $("button.button.button3").click(function() {
   }
 })
 
-$("button.button.button4").click(function() {
+$("#stop").click(function() {
   // cat MAY stop
   let prob = Math.floor(Math.random() * 101);
   console.log("Probablity = " + prob);

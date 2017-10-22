@@ -16,7 +16,7 @@ recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
 // start the recognition when the user clicks the speak button
-$("button.buttonA.button-speak").click( function() {
+$("#speak").click( function() {
   recognition.start();
   console.log('Ready to receive a command.');
 });
