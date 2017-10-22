@@ -17,6 +17,9 @@ $("#sit").click(function() {
   {
     console.log("sit");
   }
+
+  $('#tuna').removeClass("tuna-walk-sit");
+  $('#tuna').addClass("tuna-running");
 })
 
 $("#meow").click(function() {
