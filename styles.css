@@ -118,21 +118,18 @@ button
     width: auto;
     cursor: pointer;
     border-radius: 12px;
-    float: right;
-   /* transition-duration: 0.4s;*/
 }
 .buttonB{
     background-color: lightpink;
     border: none;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    /*margin: 680px 20px 150px 8px;*/
-    width: 150px;
+    margin: 0 auto;
+    width: auto;
     cursor: pointer;
     border-radius: 12px;
-    float: left;
 
 }
 
@@ -221,9 +218,14 @@ i.material-icons
     vertical-align: middle;
 }
 
-#command-controls
+div
 {
     text-align: center;
     vertical-align: middle;
+    margin: 15px 0;
+}
+
+#command-controls
+{
     margin-top: 10%;
 }
