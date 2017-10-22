@@ -76,4 +76,3 @@ $("button.button.button4").click(function() {
     console.log("stop");
   }
 })
-

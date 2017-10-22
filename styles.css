@@ -114,4 +114,5 @@ animation: name duration timing-function delay iteration-count direction fill-mo
     color: black;
     text-decoration: none;
     cursor: pointer;
+    overflow-y: auto; 
 }
