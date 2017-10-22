@@ -33,7 +33,7 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 =======
 
 .buttonA{
-    background-color: lightpink;
+    background-color: #3498DB;
     border: none;
     color: black;
     padding: 30px;
