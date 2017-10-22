@@ -10,4 +10,6 @@ HTTYC lets you either press buttons to give commands or just say them out loud! 
 ## How Did We Make This?
 We used Javascript, HTML, CSS, and lots and lots of Capri-Suns to create this web app. Many laughs, naps, and puzzles later, we had a functioning project!
 
+Try it out here: https://jchen790.github.io/HowToTrainYourCat/
+
 Powered by Capri-Suns and puzzles
